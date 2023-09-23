@@ -1,3 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Croissant+One&family=Mooli&family=Roboto&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* font-family: 'Croissant One', cursive;
+font-family: 'Mooli', sans-serif;
+font-family: 'Roboto', sans-serif; */
+
+@layer base {
+    h1, h2, h3 {
+        font-family: 'Croissant One', cursive;
+    }
+
+    h1 {
+        @apply text-3xl;
+    }
+
+    h2 {
+        @apply text-2xl;
+    }
+
+    h3 {
+        @apply text-xl;
+    }
+
+    p {
+        font-family: 'Mooli', sans-serif;
+    }
+}
