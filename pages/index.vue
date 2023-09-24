@@ -4,11 +4,11 @@
 
 <template>
     <div>
-        Test {{ userStore.count }}
-        <h1>H1 test</h1>
-        <h2>H2 test</h2>
-        <h3>H3 test</h3>
-        <p>P test</p>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus repellendus debitis iusto neque necessitatibus sint magni quos, consequatur est repellat quidem, perferendis quisquam voluptatibus, eligendi nesciunt id? Sit, maiores reiciendis!</p>
+        <h1>Welcome!</h1>
+        <form action="">
+            <label for="login" class="text-lg">Login name: </label>
+            <input name="login" type="text" class="p-1 text-sm" />
+            <button class="ml-2 border-2 border-black rounded-md px-1 submit_btn">Login</button>
+        </form>
     </div>
 </template>

@@ -9,7 +9,7 @@ font-family: 'Mooli', sans-serif;
 font-family: 'Roboto', sans-serif; */
 
 @layer base {
-    h1, h2, h3 {
+    h1, h2, h3, label, .submit_btn {
         font-family: 'Croissant One', cursive;
     }
 
@@ -25,7 +25,11 @@ font-family: 'Roboto', sans-serif; */
         @apply text-xl;
     }
 
-    p {
+    p, input {
         font-family: 'Mooli', sans-serif;
+    }
+
+    input[type="text"] {
+        @apply border-2 border-black rounded-md;
     }
 }
