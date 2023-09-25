@@ -5,10 +5,10 @@
 
 <template>
     <div>
-        <h1 v-if="userStore.logged_in">Welcome {{userStore.name}}!</h1>
-        <h1 v-else>Welcome!</h1>
+        <h1 v-if="userStore.logged_in" class="ml-2">Welcome {{userStore.name}}!</h1>
+        <h1 v-else class="ml-2">Welcome!</h1>
         <form action="" v-if="!userStore.logged_in">
-            <label for="login" class="text-lg">Login name: </label>
+            <label for="login" class="text-lg ml-2">Login name: </label>
             <input 
                 id="login" 
                 type="text" 
