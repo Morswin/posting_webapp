@@ -1,14 +1,16 @@
+import { Post } from 'types'
+
 export const useUserStore = defineStore('user', () => {
-    interface Post {
-        title: string
-        content: string
-        image?: string
-    }
+    // interface Post {
+    //     title: string
+    //     content: string
+    //     image?: string
+    // }
 
     const name = ref<string>("");
     const logged_in = ref<boolean>(false);
     const profile_pic = ref<string>("");
-    const posts = ref<Array<Post>>();
+    const posts = ref<Array<Post>>([]);
 
     function log_in(user_name: string): void {
         console.log(`Logging in as ${user_name}`);
@@ -28,6 +30,14 @@ export const useUserStore = defineStore('user', () => {
         return posts.value?.length;
     }
 
-    return { name, logged_in, log_in, log_out, profile_pic, create_new_post, get_post_length }
+    return { 
+        name, 
+        logged_in, 
+        log_in, 
+        log_out, 
+        profile_pic, 
+        create_new_post, 
+        get_post_length 
+    }
 })
 
