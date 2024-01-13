@@ -1,2 +1,4 @@
 # Backend
 backend/__pycache__/
+backend/backend/__pycache__/
+backend/venv/

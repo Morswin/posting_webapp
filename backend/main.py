@@ -1,5 +1,4 @@
 from fastapi import FastAPI
-from backend.models import User, Post, UserSettings
 
 app = FastAPI()
 
